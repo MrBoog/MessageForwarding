@@ -15,12 +15,6 @@
 - (instancetype)init
 {
     if (self = [super init]) {
-        
-        NSLog(@"：%@", [self class]);
-        NSLog(@"：%@", [super class]);
-        
-        NSLog(@"self %p",self);
-//        NSLog(@"super %p",super);
     }
     return self;
 }

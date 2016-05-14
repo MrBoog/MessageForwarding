@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "Test.h"
+#import "AnimalProxy.h"
 
 
 
@@ -26,7 +26,9 @@
 {
     [super viewWillAppear:animated];
     
-    [[Test new] test];
+    //method forwarding
+    [[AnimalProxy sharedInstance] _registerHandlerProtocol:@protocol(Animal) handler:[Cat new]];
+    [[AnimalProxy sharedInstance] run];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -40,8 +40,9 @@
     
     unsigned int numberOfMethods = 0;
     
+    
     struct objc_method_description *methods = protocol_copyMethodDescriptionList(protocol,
-                                                                                 YES,
+                                                                                 NO,//isRequiredMethod
                                                                                  YES,
                                                                                  &numberOfMethods);
     
@@ -89,12 +90,11 @@
         
         // This causes a crash...
         //        [super forwardInvocation:invocation];
-        invocation.selector = @selector(doNothing);
-        [invocation invoke];
+        [self doNothing];
     }
 }
 
 - (void)doNothing{
-    NSLog(@"not found");
+    NSLog(@"-------> %s",__func__);
 }
 @end
