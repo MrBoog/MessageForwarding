@@ -90,7 +90,7 @@
         // This causes a crash...
         //        [super forwardInvocation:invocation];
         invocation.selector = @selector(doNothing);
-        [invocation invokeWithTarget:self];
+        [invocation invoke];
     }
 }
 

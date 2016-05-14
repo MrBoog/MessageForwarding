@@ -17,4 +17,15 @@
     NSLog(@"-------> %s %@",__func__,self.class);
 }
 
+- (void)sleep
+{
+    
+}
+
+- (void)doEat:(NSString *)food
+{
+    NSLog(@"%@",self);
+}
+
+
 @end

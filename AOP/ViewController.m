@@ -7,17 +7,8 @@
 //
 
 #import "ViewController.h"
-#import "MulticastDelegate.h"
+#import "Test.h"
 
-#import "AnimalProxy.h"
-#import "Dog.h"
-#import "Cat.h"
-
-@protocol TestMulticastDelegate <NSObject>
-
-- (void)doTest;
-
-@end
 
 
 @interface ViewController ()
@@ -35,9 +26,7 @@
 {
     [super viewWillAppear:animated];
     
-    //method forwarding
-    [[AnimalProxy sharedInstance] _registerHandlerProtocol:@protocol(Animal) handler:[Dog new]];
-    [[AnimalProxy sharedInstance] run];
+    [[Test new] test];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		044E20EB1CE1E9560021DC5D /* MulticastDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 044E20EA1CE1E9560021DC5D /* MulticastDelegate.m */; };
+		0457ED001CE6F187001F7391 /* GCDMulticastDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0457ECFF1CE6F187001F7391 /* GCDMulticastDelegate.m */; };
+		0457ED051CE713C8001F7391 /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 0457ED041CE713C7001F7391 /* Test.m */; };
 		04DF9F4C1CE09A0E00CF3CCF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DF9F4B1CE09A0E00CF3CCF /* main.m */; };
 		04DF9F4F1CE09A0E00CF3CCF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DF9F4E1CE09A0E00CF3CCF /* AppDelegate.m */; };
 		04DF9F521CE09A0E00CF3CCF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DF9F511CE09A0E00CF3CCF /* ViewController.m */; };
@@ -17,11 +19,16 @@
 		04DF9F641CE0A32200CF3CCF /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DF9F631CE0A32200CF3CCF /* Dog.m */; };
 		04DF9F671CE0A36300CF3CCF /* Cat.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DF9F661CE0A36300CF3CCF /* Cat.m */; };
 		04DF9F6A1CE0A3E700CF3CCF /* AnimalProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DF9F691CE0A3E700CF3CCF /* AnimalProxy.m */; };
+		04E88E411CE5D68C0070E8D5 /* Forest.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E88E401CE5D68C0070E8D5 /* Forest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		044E20E91CE1E9560021DC5D /* MulticastDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MulticastDelegate.h; sourceTree = "<group>"; };
 		044E20EA1CE1E9560021DC5D /* MulticastDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MulticastDelegate.m; sourceTree = "<group>"; };
+		0457ECFE1CE6F187001F7391 /* GCDMulticastDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDMulticastDelegate.h; sourceTree = "<group>"; };
+		0457ECFF1CE6F187001F7391 /* GCDMulticastDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDMulticastDelegate.m; sourceTree = "<group>"; };
+		0457ED031CE713C7001F7391 /* Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
+		0457ED041CE713C7001F7391 /* Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test.m; sourceTree = "<group>"; };
 		04DF9F471CE09A0E00CF3CCF /* AOP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AOP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04DF9F4B1CE09A0E00CF3CCF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		04DF9F4D1CE09A0E00CF3CCF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -39,6 +46,8 @@
 		04DF9F661CE0A36300CF3CCF /* Cat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cat.m; sourceTree = "<group>"; };
 		04DF9F681CE0A3E700CF3CCF /* AnimalProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimalProxy.h; sourceTree = "<group>"; };
 		04DF9F691CE0A3E700CF3CCF /* AnimalProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimalProxy.m; sourceTree = "<group>"; };
+		04E88E3F1CE5D68C0070E8D5 /* Forest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Forest.h; sourceTree = "<group>"; };
+		04E88E401CE5D68C0070E8D5 /* Forest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Forest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +65,8 @@
 			isa = PBXGroup;
 			children = (
 				04DF9F611CE0A29E00CF3CCF /* AnimalProtocol.h */,
+				04E88E3F1CE5D68C0070E8D5 /* Forest.h */,
+				04E88E401CE5D68C0070E8D5 /* Forest.m */,
 				04DF9F681CE0A3E700CF3CCF /* AnimalProxy.h */,
 				04DF9F691CE0A3E700CF3CCF /* AnimalProxy.m */,
 				04DF9F621CE0A32200CF3CCF /* Dog.h */,
@@ -89,9 +100,13 @@
 				04DF9F4E1CE09A0E00CF3CCF /* AppDelegate.m */,
 				044E20E91CE1E9560021DC5D /* MulticastDelegate.h */,
 				044E20EA1CE1E9560021DC5D /* MulticastDelegate.m */,
+				0457ECFE1CE6F187001F7391 /* GCDMulticastDelegate.h */,
+				0457ECFF1CE6F187001F7391 /* GCDMulticastDelegate.m */,
 				044E20EC1CE1FAC80021DC5D /* ProxyTest */,
 				04DF9F501CE09A0E00CF3CCF /* ViewController.h */,
 				04DF9F511CE09A0E00CF3CCF /* ViewController.m */,
+				0457ED031CE713C7001F7391 /* Test.h */,
+				0457ED041CE713C7001F7391 /* Test.m */,
 				04DF9F531CE09A0E00CF3CCF /* Main.storyboard */,
 				04DF9F561CE09A0E00CF3CCF /* Assets.xcassets */,
 				04DF9F581CE09A0E00CF3CCF /* LaunchScreen.storyboard */,
@@ -184,7 +199,10 @@
 				04DF9F641CE0A32200CF3CCF /* Dog.m in Sources */,
 				04DF9F4C1CE09A0E00CF3CCF /* main.m in Sources */,
 				044E20EB1CE1E9560021DC5D /* MulticastDelegate.m in Sources */,
+				0457ED051CE713C8001F7391 /* Test.m in Sources */,
 				04DF9F6A1CE0A3E700CF3CCF /* AnimalProxy.m in Sources */,
+				04E88E411CE5D68C0070E8D5 /* Forest.m in Sources */,
+				0457ED001CE6F187001F7391 /* GCDMulticastDelegate.m in Sources */,
 				04DF9F671CE0A36300CF3CCF /* Cat.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

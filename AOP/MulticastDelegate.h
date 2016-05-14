@@ -10,4 +10,12 @@
 
 @interface MulticastDelegate : NSProxy
 
+- (instancetype)init;
+
+
+- (void)addDelegate:(id)delegate;
+- (void)removeDelegate:(id)delegate;
+- (void)removeAllDelegates;
+
+
 @end

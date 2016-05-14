@@ -12,9 +12,36 @@
 @synthesize name;
 @synthesize type;
 
+- (instancetype)init
+{
+    if (self = [super init]) {
+        
+        NSLog(@"：%@", [self class]);
+        NSLog(@"：%@", [super class]);
+        
+        NSLog(@"self %p",self);
+//        NSLog(@"super %p",super);
+    }
+    return self;
+}
+
 - (void)run
 {
     NSLog(@"-------> %s %@",__func__,self.class);
 }
 
+- (void)sleep
+{
+
+}
+
+- (void)doEat:(NSString *)food
+{
+    NSLog(@"%@",self);
+}
+
+- (void)doMulticastDelegateTest
+{
+    NSLog(@"-------> %s",__func__);
+}
 @end

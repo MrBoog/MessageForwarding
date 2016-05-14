@@ -14,6 +14,11 @@
 @property (nonatomic, copy) NSString *name;
 @property (nonatomic, copy) NSString *type;
 
+@optional
 - (void)run;
+- (void)sleep;
+- (void)doEat:(NSString *)food;
+
+- (void)doMulticastDelegateTest;
 
 @end
